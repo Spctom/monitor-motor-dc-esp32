@@ -1,0 +1,30 @@
+# ENSAIO 2
+# firmware Nov 21 2026 15:50:28 | reset no boot: LIGOU_ENERGIA | ligado ha 6 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 185 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: 0x68
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,0,-20,2673,39.3,0.0030,0.819
+1000,LED_VERDE,0,0,0,-21,2672,38.8,0.0029,0.814
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,0,-21,2672,38.8,0.0029,0.816
+2000,LED_AMARELO,0,0,0,-15,2676,38.1,0.0031,0.809
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,0,-14,2673,37.3,0.0031,0.815
+3000,LED_VERMELHO,0,0,0,-19,2673,36.6,0.0033,0.819
+# PASSO BUZZER duty=0
+# ABORTANDO em t=3254 ms: COMANDO_SERIAL
+# === RESUMO ===
+# ABORTADO: COMANDO_SERIAL
+# RESULTADO LM35 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO ACS712 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MPU6050 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO OLED NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 22 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

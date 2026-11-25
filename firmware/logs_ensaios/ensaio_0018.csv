@@ -1,0 +1,47 @@
+# ENSAIO 18
+# firmware Nov 23 2026 08:20:39 | reset no boot: LIGOU_ENERGIA | ligado ha 152 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 66 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: 0x68
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,0,-7,2612,nan,0.0024,1.078
+1000,LED_VERDE,0,0,0,24,2614,nan,0.0024,1.079
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,0,-3,2614,nan,0.0023,1.078
+2000,LED_AMARELO,0,0,0,15,2616,nan,0.0023,1.081
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,0,-3,2615,nan,0.0024,1.081
+3000,LED_VERMELHO,0,0,0,-28,2608,nan,0.0024,1.079
+# PASSO BUZZER duty=0
+3500,BUZZER,0,0,0,-19,2602,nan,0.0045,1.082
+# PASSO OLED duty=0
+4000,OLED,0,0,0,45,2619,nan,0.0045,1.072
+4500,OLED,0,0,0,-6,2614,nan,0.0054,1.073
+5000,OLED,0,0,0,-55,2603,nan,0.0054,1.071
+5500,OLED,0,0,0,-35,2615,nan,0.0025,1.070
+6000,OLED,0,0,0,-45,2612,nan,0.0025,1.071
+6500,OLED,0,0,0,1,2612,nan,0.0021,1.073
+# PASSO REPOUSO duty=0
+7000,REPOUSO,0,0,0,-36,2610,nan,0.0021,1.076
+7500,REPOUSO,0,0,0,-59,2609,nan,0.0025,1.076
+8000,REPOUSO,0,0,0,-11,2611,nan,0.0025,1.070
+8500,REPOUSO,0,0,0,72,2617,nan,0.0054,1.076
+9000,REPOUSO,0,0,0,21,2609,nan,0.0054,1.085
+9500,REPOUSO,0,0,0,50,2612,nan,0.0042,1.072
+10000,REPOUSO,0,0,0,53,2611,nan,0.0042,1.080
+10500,REPOUSO,0,0,0,38,2611,nan,0.0027,1.080
+# ABORTANDO em t=10944 ms: BOTAO_BOOT
+# === RESUMO ===
+# ABORTADO: BOTAO_BOOT
+# RESULTADO LM35 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO ACS712 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MPU6050 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO OLED NAO_TESTADO: ainda nao instalado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 261 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

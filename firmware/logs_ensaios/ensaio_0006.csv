@@ -1,0 +1,49 @@
+# ENSAIO 6
+# firmware Nov 22 2026 15:57:39 | reset no boot: LIGOU_ENERGIA | ligado ha 10 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 185 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: 0x68
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,0,-10,2594,nan,0.0036,0.814
+1000,LED_VERDE,0,0,0,-18,2586,nan,0.0036,0.816
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,0,-20,2591,nan,0.0030,0.809
+2000,LED_AMARELO,0,0,0,-20,2590,nan,0.0030,0.807
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,0,-23,2588,nan,0.0029,0.814
+3000,LED_VERMELHO,0,0,0,-17,2590,nan,0.0029,0.811
+# PASSO BUZZER duty=0
+3500,BUZZER,0,0,0,-13,2596,nan,0.0033,0.809
+# PASSO OLED duty=0
+4000,OLED,0,0,0,-18,2590,nan,0.0033,0.812
+4500,OLED,0,0,0,-5,2595,nan,0.0043,0.813
+5000,OLED,0,0,0,-2,2594,nan,0.0043,0.811
+5500,OLED,0,0,0,-1,2595,nan,0.0037,0.815
+6000,OLED,0,0,0,-8,2590,nan,0.0037,0.815
+6500,OLED,0,0,0,-22,2586,nan,0.0033,0.807
+# PASSO REPOUSO duty=0
+7000,REPOUSO,0,0,0,-20,2590,nan,0.0033,0.808
+7500,REPOUSO,0,0,0,-16,2592,nan,0.0032,0.813
+8000,REPOUSO,0,0,0,-6,2590,nan,0.0032,0.823
+8500,REPOUSO,0,0,0,9,2596,nan,0.0039,0.815
+9000,REPOUSO,0,0,0,0,2591,nan,0.0039,0.822
+9500,REPOUSO,0,0,0,7,2591,nan,0.0049,0.809
+10000,REPOUSO,0,0,0,3,2589,nan,0.0049,0.811
+10500,REPOUSO,0,0,0,11,2593,nan,0.0036,0.815
+11000,REPOUSO,0,0,0,3,2590,nan,0.0036,0.810
+11500,REPOUSO,0,0,0,11,2595,nan,0.0033,0.812
+# ABORTANDO em t=11765 ms: BOTAO_BOOT
+# === RESUMO ===
+# ABORTADO: BOTAO_BOOT
+# RESULTADO LM35 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO ACS712 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MPU6050 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO OLED NAO_TESTADO: ainda nao instalado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 123 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

@@ -1,0 +1,55 @@
+# ENSAIO 3
+# firmware Nov 22 2026 15:57:39 | reset no boot: LIGOU_ENERGIA | ligado ha 4 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 185 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: 0x68
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,0,-12,2666,nan,0.0000,0.000
+1000,LED_VERDE,0,0,0,-11,2667,nan,0.0000,0.000
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,0,-8,2669,nan,0.0000,0.000
+2000,LED_AMARELO,0,0,0,-13,2665,nan,0.0000,0.000
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,0,-12,2667,nan,0.0000,0.000
+3000,LED_VERMELHO,0,0,0,-16,2666,nan,0.0000,0.000
+# PASSO BUZZER duty=0
+3500,BUZZER,0,0,0,-26,2665,nan,0.0000,0.000
+# PASSO OLED duty=0
+4000,OLED,0,0,0,-21,2666,nan,0.0000,0.000
+4500,OLED,0,0,0,-11,2670,nan,0.0000,0.000
+5000,OLED,0,0,0,-5,2669,nan,0.0000,0.000
+5500,OLED,0,0,0,-8,2669,nan,0.0000,0.000
+6000,OLED,0,0,0,-8,2668,nan,0.0000,0.000
+6500,OLED,0,0,0,-6,2671,nan,0.0000,0.000
+# PASSO REPOUSO duty=0
+7000,REPOUSO,0,0,0,-9,2668,nan,0.0000,0.000
+7500,REPOUSO,0,0,0,-6,2670,nan,0.0000,0.000
+8000,REPOUSO,0,0,0,0,2668,nan,0.0000,0.000
+8500,REPOUSO,0,0,0,2,2670,nan,0.0000,0.000
+9000,REPOUSO,0,0,0,0,2668,nan,0.0000,0.000
+9500,REPOUSO,0,0,0,7,2672,nan,0.0000,0.000
+10000,REPOUSO,0,0,0,2,2669,nan,0.0000,0.000
+10500,REPOUSO,0,235,2,-3,2668,nan,0.0000,0.000
+11000,REPOUSO,0,233,3,-1,2669,nan,0.0000,0.000
+11500,REPOUSO,0,0,4,-3,2669,nan,0.0000,0.000
+12000,REPOUSO,0,0,4,-1,2670,nan,0.0000,0.000
+12500,REPOUSO,0,0,4,-1,2670,nan,0.0000,0.000
+# PASSO CONTAGEM duty=0
+13000,CONTAGEM,0,0,4,0,2671,nan,0.0000,0.000
+13500,CONTAGEM,0,0,4,-5,2668,nan,0.0000,0.000
+14000,CONTAGEM,0,0,4,-4,2669,nan,0.0000,0.000
+# ABORTANDO em t=14474 ms: COMANDO_SERIAL
+# === RESUMO ===
+# ABORTADO: COMANDO_SERIAL
+# RESULTADO LM35 NAO_TESTADO: desativado em config.h (LM35_INSTALADO = false)
+# RESULTADO ACS712 OK: zero 2670 mV no modulo; variacao ainda nao avaliada
+# RESULTADO MPU6050 FALHA: |a| = 0.000 g parado; esperado ~1,0 g
+# RESULTADO OLED NAO_TESTADO: ainda nao instalado
+# RESULTADO HALL AVISO: 4 pulso(s) com o motor parado: ruido ou mao no ima
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 60 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

@@ -1,0 +1,19 @@
+# Credenciais (Wi-Fi, Thinger.io): nunca vão para o repositório. Modelo em secrets.example.h
+firmware/monitor_motor/secrets.h
+
+# Sistema e arquivos soltos
+.DS_Store
+__MACOSX/
+Brave-Origin.dmg
+firmware/monitor_motor.zip
+
+# KiCad: preferências locais, histórico e backups
+*.kicad_prl
+.history/
+*-backups/
+*.lck
+fp-info-cache
+
+# Python e compilação
+__pycache__/
+build/

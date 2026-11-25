@@ -1,0 +1,24 @@
+# ENSAIO 22
+# firmware Nov 23 2026 11:46:20 | reset no boot: LIGOU_ENERGIA | ligado ha 56 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 66 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: nenhum (verificar SDA/SCL/alimentação)
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,46,39,2591,33.0,nan,nan
+1000,LED_VERDE,0,0,46,-1,2584,39.3,nan,nan
+# PASSO LED_AMARELO duty=0
+# ABORTANDO em t=1329 ms: BOTAO_BOOT
+# === RESUMO ===
+# ABORTADO: BOTAO_BOOT
+# RESULTADO LM35 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO ACS712 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MPU6050 NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO OLED NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 3 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

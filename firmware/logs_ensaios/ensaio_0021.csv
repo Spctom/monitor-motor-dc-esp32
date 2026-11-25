@@ -1,0 +1,60 @@
+# ENSAIO 21
+# firmware Nov 23 2026 11:46:20 | reset no boot: LIGOU_ENERGIA | ligado ha 34 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 66 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: nenhum (verificar SDA/SCL/alimentação)
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,10,-33,2582,24.1,nan,nan
+1000,LED_VERDE,0,0,10,-13,2586,31.8,nan,nan
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,10,-18,2587,20.0,nan,nan
+2000,LED_AMARELO,0,0,10,-63,2584,16.1,nan,nan
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,10,23,2598,34.5,nan,nan
+3000,LED_VERMELHO,0,9020,20,11,2592,39.6,nan,nan
+# PASSO BUZZER duty=0
+3500,BUZZER,0,0,20,-23,2592,39.6,nan,nan
+# PASSO OLED duty=0
+4000,OLED,0,0,20,17,2584,39.5,nan,nan
+4500,OLED,0,0,20,29,2590,39.8,nan,nan
+5000,OLED,0,0,20,15,2586,40.4,nan,nan
+5500,OLED,0,0,21,3,2592,40.6,nan,nan
+6000,OLED,0,0,21,-42,2584,40.6,nan,nan
+6500,OLED,0,474,24,-65,2583,40.2,nan,nan
+# PASSO REPOUSO duty=0
+7000,REPOUSO,0,0,24,8,2594,38.5,nan,nan
+7500,REPOUSO,0,0,24,-33,2585,35.8,nan,nan
+8000,REPOUSO,0,0,24,77,2590,22.8,nan,nan
+8500,REPOUSO,0,0,24,44,2595,17.0,nan,nan
+9000,REPOUSO,0,0,24,56,2587,15.1,nan,nan
+9500,REPOUSO,0,0,24,58,2594,14.5,nan,nan
+10000,REPOUSO,0,0,24,21,2587,14.3,nan,nan
+10500,REPOUSO,0,0,24,24,2586,26.5,nan,nan
+11000,REPOUSO,0,0,24,61,2594,33.7,nan,nan
+11500,REPOUSO,0,0,24,38,2591,34.6,nan,nan
+12000,REPOUSO,0,0,24,20,2582,34.0,nan,nan
+12500,REPOUSO,0,0,24,82,2595,33.8,nan,nan
+# PASSO CONTAGEM duty=0
+13000,CONTAGEM,0,0,24,111,2594,31.6,nan,nan
+13500,CONTAGEM,0,3753,34,84,2588,31.2,nan,nan
+14000,CONTAGEM,0,0,34,9,2582,31.2,nan,nan
+14500,CONTAGEM,0,0,34,-4,2587,31.9,nan,nan
+15000,CONTAGEM,0,0,35,47,2587,32.3,nan,nan
+15500,CONTAGEM,0,318,41,47,2589,31.6,nan,nan
+16000,CONTAGEM,0,285,46,73,2598,32.5,nan,nan
+16500,CONTAGEM,0,0,46,33,2589,33.0,nan,nan
+# ABORTANDO em t=16878 ms: BOTAO_BOOT
+# === RESUMO ===
+# ABORTADO: BOTAO_BOOT
+# RESULTADO LM35 AVISO: 25.8 C: estimativa, sensor com erro e fora da protecao
+# RESULTADO ACS712 OK: zero 2586 mV no modulo; variacao ainda nao avaliada
+# RESULTADO MPU6050 FALHA: nao responde em 0x68 (conferir SDA, SCL, VCC, GND)
+# RESULTADO OLED NAO_TESTADO: ainda nao instalado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 283 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM

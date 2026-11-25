@@ -1,0 +1,51 @@
+# ENSAIO 12
+# firmware Nov 22 2026 17:48:58 | reset no boot: LIGOU_ENERGIA | ligado ha 67 s
+# PWM 5000 Hz, modo rapido (PWM no ENA), duty maximo 85 %
+# ACS712 66 mV/A, divisor 1.000 | limites: 1500 mA, 60 C, 0.50 g
+# I2C encontrados: 0x68
+t_ms,fase,duty_pct,rpm,pulsos,corrente_mA,acs_pino_mV,temp_C,vib_g,acel_g
+# PASSO LED_VERDE duty=0
+500,LED_VERDE,0,0,0,nan,142,nan,0.0087,0.813
+1000,LED_VERDE,0,0,0,nan,142,nan,0.0087,0.808
+# PASSO LED_AMARELO duty=0
+1500,LED_AMARELO,0,0,0,nan,142,nan,0.0065,0.811
+2000,LED_AMARELO,0,0,0,nan,142,nan,0.0065,0.808
+# PASSO LED_VERMELHO duty=0
+2500,LED_VERMELHO,0,0,0,nan,142,nan,0.0057,0.807
+3000,LED_VERMELHO,0,0,0,nan,142,nan,0.0057,0.812
+# PASSO BUZZER duty=0
+3500,BUZZER,0,0,0,nan,142,nan,0.0036,0.814
+# PASSO OLED duty=0
+4000,OLED,0,0,0,nan,142,nan,0.0036,0.828
+4500,OLED,0,0,0,nan,142,nan,0.0046,0.810
+5000,OLED,0,0,0,nan,142,nan,0.0046,0.815
+5500,OLED,0,0,0,nan,142,nan,0.0032,0.808
+6000,OLED,0,0,0,nan,142,nan,0.0032,0.811
+6500,OLED,0,0,0,nan,142,nan,0.0054,0.812
+# PASSO REPOUSO duty=0
+7000,REPOUSO,0,0,0,nan,142,nan,0.0054,0.809
+7500,REPOUSO,0,0,0,nan,142,nan,0.0043,0.815
+8000,REPOUSO,0,0,0,nan,142,nan,0.0043,0.801
+8500,REPOUSO,0,0,0,nan,142,nan,0.0048,0.813
+9000,REPOUSO,0,0,0,nan,142,nan,0.0048,0.806
+9500,REPOUSO,0,0,0,nan,142,nan,0.0056,0.812
+10000,REPOUSO,0,0,0,nan,142,nan,0.0056,0.808
+10500,REPOUSO,0,0,0,nan,142,nan,0.0047,0.810
+11000,REPOUSO,0,0,0,nan,142,nan,0.0047,0.812
+11500,REPOUSO,0,0,0,nan,142,nan,0.0049,0.811
+12000,REPOUSO,0,0,0,nan,142,nan,0.0049,0.811
+12500,REPOUSO,0,0,0,nan,142,nan,0.0032,0.815
+# ABORTANDO em t=12645 ms: ACS712_SEM_LEITURA
+# === RESUMO ===
+# ABORTADO: ACS712_SEM_LEITURA
+# RESULTADO LM35 NAO_TESTADO: desativado em config.h (LM35_INSTALADO = false)
+# RESULTADO ACS712 FALHA: pino em 142 mV: OUT desligado ou modulo sem 5 V
+# RESULTADO MPU6050 AVISO: |a| = 0.811 g parado: desvio do sensor (esperado ~1,0 g)
+# RESULTADO OLED NAO_TESTADO: ainda nao instalado
+# RESULTADO HALL NAO_TESTADO: nao chegou a ser avaliado
+# RESULTADO MOTOR NAO_TESTADO: nao chegou a ser avaliado
+# CONFERIR A OLHO: 3 LEDs e buzzer acenderam um de cada vez; OLED ficou todo branco por 3 s
+# CURVA degrau,duty_pct,rpm,corrente_mA,vib_g
+# FLASH maior gravacao: 197 ms; erro de escrita: nao
+# GERAL FALHA
+# FIM
